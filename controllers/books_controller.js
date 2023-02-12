@@ -54,6 +54,7 @@ books.get('/seed', (req, res) => {
         }))
 })
 
+// Show
 books.get('/:id', (req, res) => {
     Book.findById(req.params.id)
         .then(books => {
